@@ -4,11 +4,11 @@ platforms: .Net
 author: alvadb
 ---
 
-# Getting Started with Cosmosdb - Create Document D B With I P Range - in .Net #
+# Getting Started with Cosmosdb - Create Cosmos D B With I P Range - in .Net #
 
-          Azure DocumentDB sample -
-           - Create a DocumentDB configured with IP range filter
-           - Delete the DocumentDB.
+          Azure CosmosDB sample -
+           - Create a CosmosDB configured with IP range filter
+           - Delete the CosmosDB.
 
 
 ## Running this Sample ##
