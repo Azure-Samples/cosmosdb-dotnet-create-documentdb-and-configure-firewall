@@ -4,7 +4,7 @@ platforms: .Net
 author: alvadb
 ---
 
-# Getting Started with Cosmosdb - Create Cosmos D B With I P Range - in .Net #
+# Getting Started with Cosmosdb - Create Cosmos DB With IP Range - in .Net #
 
           Azure CosmosDB sample -
            - Create a CosmosDB configured with IP range filter
