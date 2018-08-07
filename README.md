@@ -1,10 +1,10 @@
 ---
-services: Cosmosdb
-platforms: .Net
+services: Cosmos-DB
+platforms: dotnet
 author: alvadb
 ---
 
-# Getting Started with Cosmosdb - Create Cosmos DB With IP Range - in .Net #
+# Create a DocumentDB, configure it for high availability and create a firewall by limiting access to DocumentDB from an approved set of IP addresses using C# #
 
           Azure CosmosDB sample -
            - Create a CosmosDB configured with IP range filter
@@ -15,7 +15,7 @@ author: alvadb
 
 To run this sample:
 
-Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/AUTH.md).
+Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md).
 
     git clone https://github.com/Azure-Samples/cosmosdb-dotnet-create-documentdb-and-configure-firewall.git
 
