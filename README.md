@@ -4,16 +4,16 @@ languages:
 - csharp
 products:
 - azure
-services: Cosmos-DB
-platforms: dotnet
-author: yaohaizh
+extensions:
+- services: Cosmos-DB
+- platforms: dotnet
 ---
 
 # Create a DocumentDB, configure it for high availability and create a firewall by limiting access to DocumentDB from an approved set of IP addresses using C# #
 
-          Azure CosmosDB sample -
-           - Create a CosmosDB configured with IP range filter
-           - Delete the CosmosDB.
+ Azure CosmosDB sample -
+  - Create a CosmosDB configured with IP range filter
+  - Delete the CosmosDB.
 
 
 ## Running this Sample ##
