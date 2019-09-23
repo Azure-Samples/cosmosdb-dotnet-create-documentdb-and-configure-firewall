@@ -7,6 +7,7 @@ products:
 extensions:
 - services: Cosmos-DB
 - platforms: dotnet
+description: "Azure CosmosDB sample."
 ---
 
 # Create a DocumentDB, configure it for high availability and create a firewall by limiting access to DocumentDB from an approved set of IP addresses using C# #
