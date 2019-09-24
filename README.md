@@ -8,6 +8,8 @@ extensions:
 - services: Cosmos-DB
 - platforms: dotnet
 description: "Azure CosmosDB sample."
+urlFragment: create-document-db-high-availability
+name: "Create a DocumentDB, configure it for high availability and create a firewall"
 ---
 
 # Create a DocumentDB, configure it for high availability and create a firewall by limiting access to DocumentDB from an approved set of IP addresses using C# #
