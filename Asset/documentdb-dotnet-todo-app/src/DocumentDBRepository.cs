@@ -79,7 +79,7 @@ namespace todo
             await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id), new RequestOptions(){PartitionKey = new PartitionKey(category)});
         }
 
-        public static void Initialize()
+        public static async Task InitializeAsync()
         {
             var credential = new DefaultAzureCredential();
             var vaultBaseUrl = Environment.GetEnvironmentVariable("AZURE_KEYVAULT_URI");
