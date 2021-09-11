@@ -79,14 +79,14 @@ namespace todo
             await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id), new RequestOptions(){PartitionKey = new PartitionKey(category)});
         }
 
-        public static async Task InitializeAsync()
+        public static void Initialize()
         {
             var credential = new DefaultAzureCredential();
             var vaultBaseUrl = Environment.GetEnvironmentVariable("AZURE_KEYVAULT_URI");
             SecretClient secretClient = new SecretClient(new Uri(vaultBaseUrl),credential);
-            var endpoint = secretClient.GetSecretAsync("azure-documentdb-uri").GetAwaiter().GetResult().Value;
-            var authKey = secretClient.GetSecretAsync("azure-documentdb-key").GetAwaiter().GetResult().Value;
-            client = new DocumentClient(new Uri(endpoint.Value), authKey.Value);
+            var endpoint = secretClient.GetSecret("azure-documentdb-uri").Value.Value;
+            var authKey = secretClient.GetSecret("azure-documentdb-key").Value.Value;
+            client = new DocumentClient(new Uri(endpoint), authKey);
             CreateDatabaseIfNotExistsAsync().Wait();
             CreateCollectionIfNotExistsAsync().Wait();
         }

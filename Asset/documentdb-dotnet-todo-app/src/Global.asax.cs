@@ -16,7 +16,7 @@ namespace todo
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            DocumentDBRepository<todo.Models.Item>.InitializeAsync();
+            DocumentDBRepository<todo.Models.Item>.Initialize();
         }
     }
 }
